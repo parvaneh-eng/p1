@@ -5,16 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   imports: [
   BrowserModule,
   RouterModule.forRoot([
-    {path: 'home', component:HomeComponent},
+    {path: 'home', component:HomeComponent,
     {path: 'about-us', component:AboutUsComponent},
-     {path: '', redirectTo: '/about-us', pathMatch: 'full'},
+    
  
   ]),
 ],
